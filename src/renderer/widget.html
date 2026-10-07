@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:" />
+  <title>MeowsNotes — виджет</title>
+  <link rel="stylesheet" href="widget.css" />
+</head>
+<body>
+  <div class="widget" id="widget">
+    <div class="grip" data-edge="l"></div>
+    <div class="grip" data-edge="r"></div>
+    <div class="grip" data-edge="t"></div>
+    <div class="grip" data-edge="b"></div>
+    <div class="grip corner" data-edge="tl"></div>
+    <div class="grip corner" data-edge="tr"></div>
+    <div class="grip corner" data-edge="bl"></div>
+    <div class="grip corner" data-edge="br"></div>
+
+    <div class="w-head">
+      <div class="w-brand">
+        <img class="w-icon" src="../../assets/icon-small.png" alt="" />
+        <div class="w-title">
+          <span>MeowsNotes</span>
+          <span id="status" class="status bad"></span>
+        </div>
+      </div>
+      <div class="w-actions">
+        <button id="w-copy" title="Скопировать весь текст">
+          <svg class="i-copy" viewBox="0 0 24 24"><path d="M16 1H4a2 2 0 0 0-2 2v14h2V3h12V1zm3 4H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zm0 16H8V7h11v14z"/></svg>
+          <svg class="i-done" viewBox="0 0 24 24"><path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+        </button>
+        <button id="w-menu" title="Меню">
+          <svg viewBox="0 0 24 24"><path d="M12 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm0 6a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <textarea id="note" class="note" placeholder="Пишите здесь…" spellcheck="true"></textarea>
+  </div>
+
+  <script src="widget.js"></script>
+</body>
+</html>
