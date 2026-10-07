@@ -21,7 +21,7 @@
 
 [Последний релиз](https://github.com/MrMe0ws/MeowsNotes/releases/latest) — Windows 10/11 x64:
 
-- `MeowsNotes Setup X.Y.Z.exe` — установщик (ярлык на рабочем столе, удаление через «Приложения»);
+- `MeowsNotes.Setup.X.Y.Z.exe` — установщик (ярлык на рабочем столе, удаление через «Приложения»);
 - `MeowsNotes-X.Y.Z-portable.zip` — без установки: распаковать и запустить `MeowsNotes.exe`.
 
 Файлы не подписаны, поэтому SmartScreen может предупредить о неизвестном издателе:
